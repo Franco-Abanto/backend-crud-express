@@ -19,7 +19,7 @@ router.post("/login", (req, res, next) => {
         });
         res.status(200).json({ auth: true, token });
       } else {
-        res.status(401).json({ message: "Credenciales inválidas" });
+        res.status(401).json({ auth: true, token: null });
       }
     }
   });

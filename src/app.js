@@ -7,5 +7,6 @@ app.use(cors());
 app.use(express.json());
 
 app.use(require("./controllers/authController"));
+app.use(require("./controllers/crudController"));
 
 module.exports = app;
